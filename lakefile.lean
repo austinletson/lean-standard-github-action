@@ -2,7 +2,7 @@ import Lake
 open Lake DSL
 
 package «standard-action» where
-  -- add package configuration options here
+  require std from git "https://github.com/leanprover/std4" @ "main"
 
 lean_lib «StandardAction» where
   -- add library configuration options here
@@ -11,8 +11,8 @@ lean_lib «StandardAction» where
 lean_exe «standard-action» where
   root := `Main
 
-@[test_runner]
-script test do
-  println! "Running fake tests..."
-  println! "Fake tests passed!"
-  return 0
+-- @[test_runner]
+-- script test do
+--   println! "Running fake tests..."
+--   println! "Fake tests passed!"
+--   return 0
