@@ -23,3 +23,5 @@ jobs:
         with:
           run-tests: false
           use-std-linter-framework: true
+          use-mathlib-cache: true
+          lint-module: StandardAction
