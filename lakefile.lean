@@ -2,7 +2,8 @@ import Lake
 open Lake DSL
 
 package «standard-action» where
-  require std from git "https://github.com/leanprover/std4" @ "main"
+  require mathlib from git "https://github.com/leanprover-community/mathlib4"
+  -- require std from git "https://github.com/leanprover/std4" @ "main"
 
 lean_lib «StandardAction» where
   -- add library configuration options here
