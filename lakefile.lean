@@ -10,3 +10,9 @@ lean_lib «StandardAction» where
 @[default_target]
 lean_exe «standard-action» where
   root := `Main
+
+@[test_runner]
+script test do
+  println! "Running fake tests..."
+  println! "Fake tests passed!"
+  return 0
