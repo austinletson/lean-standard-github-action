@@ -23,4 +23,4 @@ jobs:
         with:
           test: false
           mathlib-cache: true
-          lint-module: Standard
+          lint-module: StandardAction
