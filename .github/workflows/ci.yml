@@ -21,7 +21,6 @@ jobs:
     steps:
       - uses: austinletson/lean-standard-action@develop
         with:
-          run-tests: false
-          use-std-linter-framework: true
-          use-mathlib-cache: true
-          lint-module: StandardAction
+          test: false
+          mathlib-cache: true
+          lint-module: Standard
